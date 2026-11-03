@@ -358,30 +358,23 @@ o_t=\sigma(W_o[h_{t-1},x_t]+b_o),
 \tilde{c}_t=\tanh(W_c[h_{t-1},x_t]+b_c).
 ```
 
-
-Forget-gate $f_t$ решает, что сохранить из $c_{t-1}$. Input-gate $i_t$ и кандидат $\tilde{c}_t$ решают, что записать. Output-gate $o_t$ решает, что прочитать в $h_t$:
-
+Forget-gate $f_t$ решает, что сохранить из $c_{t-1}$. Input-gate $i_t$ и кандидат $\tilde{c}_t$ решает, что записать. Output-gate $o_t$ решает, что прочитать в $h_t$:
 
 ```math
-c_t=f_t\odot c_{t-1}+i_t\odot\tilde{c}_t,
-\qquad
-h_t=o_t\odot\tanh(c_t).
+c_t=f_t\(\odot c_{t-1}+i_t\odot\tilde{c}_t, \qquad h_t=o_t\odot\tanh\)(c_t).
 ```
-
 
 Ключевое отличие от простой RNN: обновление $c_t$ аддитивно по прошлой клетке. Вдоль пути $c_{t-1}\to c_t$ множитель есть $f_t$, а не произведение насыщающихся нелинейностей всей рекурсии. Если forget-gate близок к единице, градиент по времени проходит почти без затухания.
 
 GRU объединяет forget и input в один update-gate $z_t$ и вводит reset-gate $r_t$ без отдельной клетки $c_t$:
 
-
 ```math
-h_t=(1-z_t)\odot h_{t-1}+z_t\odot\tilde{h}_t,
+h_t=(1-z_t)\(\odot h_{t-1}+z_t\odot\tilde{h}_t, \%\%\)MAGIT_PARSER_PROTECT%%
 ```
 
 где кандидат $\tilde{h}_t$ зависит от $r_t \odot h_{t-1}$. Параметров меньше, чем у LSTM, путь градиента снова аддитивный по $h_{t-1}$.
 
 ## Источники
-
 
 - Goodfellow, Bengio, Courville. Deep Learning
 - He et al. Deep Residual Learning for Image Recognition. CVPR 2016
