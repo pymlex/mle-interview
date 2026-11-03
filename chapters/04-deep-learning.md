@@ -128,7 +128,7 @@ Softmax на логитах $z\in\mathbb{R}^K$:
 **BatchNorm** для вектора активаций по мини-батчу размера $B$ в фиксированной координате считает
 
 ```math
-\(\hat u_i=\frac{u_i-\mu_B}{\sqrt{\sigma_B^2+\varepsilon}}, \qquad y_i=\gamma\hat u_i+\beta,\)
+\hat u_i=\frac{u_i-\mu_B}{\sqrt{\sigma_B^2+\varepsilon}}, \qquad y_i=\gamma\hat u_i+\beta,\)
 ```
 
 где $\mu_B$ и $\sigma_B^2$ — среднее и дисперсия по батчу, а $\gamma$, $\beta$ обучаемы. На применении уже обученной модели, когда батч может быть размера один, $\mu$ и $\sigma$ заменяют накопительной оценкой, собранной во время обучения. BatchNorm зависит от размера и состава батча.
@@ -136,11 +136,11 @@ Softmax на логитах $z\in\mathbb{R}^K$:
 **LayerNorm** для одного примера нормирует по всем его признакам слоя: среднее и дисперсия берутся внутри примера, а не по батчу. Для признаков размерности $d$ одного объекта формулы имеют вид
 
 ```math
-\(\mu_L = \frac1d\sum_{j=1}^{d}u_j, \qquad \sigma_L^2 = \frac1d\sum_{j=1}^{d}(u_j - \mu_L)^2,\)
+\mu_L = \frac1d\sum_{j=1}^{d}u_j, \qquad \sigma_L^2 = \frac1d\sum_{j=1}^{d}(u_j - \mu_L)^2,\)
 ```
 
 ```math
-\(\hat u_j = \frac{u_j - \mu_L}{\sqrt{\sigma_L^2 + \varepsilon}}, \qquad y_j = \gamma \hat u_j + \beta.\)
+\hat u_j = \frac{u_j - \mu_L}{\sqrt{\sigma_L^2 + \varepsilon}}, \qquad y_j = \gamma \hat u_j + \beta.\)
 ```
 
 Поэтому LayerNorm устойчив к малому батчу и к переменной длине последовательности.
@@ -148,23 +148,23 @@ Softmax на логитах $z\in\mathbb{R}^K$:
 **RMSNorm** опускает вычитание среднего и делит на
 
 ```math
-\(\mathrm{RMS}(u)=\sqrt{\frac1d\sum_{j=1}^{d}u_j^2+\varepsilon},\)
+\mathrm{RMS}(u)=\sqrt{\frac1d\sum_{j=1}^{d}u_j^2+\varepsilon},\)
 ```
 
 а итоговое преобразование на выходе использует только масштабирование:
 
 ```math
-\(y_j = \gamma \frac{u_j}{\mathrm{RMS}(u)}.\)
+y_j = \gamma \frac{u_j}{\mathrm{RMS}(u)}.\)
 ```
 
 **GroupNorm** делит каналы на группы и нормирует статистикой внутри группы одного примера. Если $d$ признаков (каналов) разбиты на $G$ групп, то для признака $j$, входящего в группу $S_g$ размера $m = d/G$, вычисляются:
 
 ```math
-\(\mu_G = \frac1m\sum_{k \in S_g}u_k, \qquad \sigma_G^2 = \frac1m\sum_{k \in S_g}(u_k - \mu_G)^2,\)
+\mu_G = \frac1m\sum_{k \in S_g}u_k, \qquad \sigma_G^2 = \frac1m\sum_{k \in S_g}(u_k - \mu_G)^2,\)
 ```
 
 ```math
-\(\hat u_j = \frac{u_j - \mu_G}{\sqrt{\sigma_G^2 + \varepsilon}}, \qquad y_j = \gamma \hat u_j + \beta.\)
+\hat u_j = \frac{u_j - \mu_G}{\sqrt{\sigma_G^2 + \varepsilon}}, \qquad y_j = \gamma \hat u_j + \beta.\)
 ```
 
 Метод устойчив при малом батче в свёрточных сетях.
