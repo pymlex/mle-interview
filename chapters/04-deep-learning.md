@@ -265,7 +265,7 @@ Lion хранит одно скользящее среднее $m$. Для те�
 
 ```math
 c_t=\beta_1 m_{t-1}+(1-\beta_1)g_t,
-\qquad \theta_t=(1-\eta_t\lambda)\theta_{t-1}-\eta_t\operatorname{sign}(c_t),
+\qquad \theta_t=(1-\eta_t\lambda)\theta_{t-1}-\eta_t\mathrm{sign}(c_t),
 ```
 
 ```math
@@ -288,10 +288,10 @@ c_{t,j}=\rho_t c_{t-1,j}+(1-\rho_t)\frac{1}{h}\sum_{i=1}^{h}S_{ij}.
 
 ```math
 U_{ij}=\frac{G_{t,ij}}{\sqrt{\widehat V_{t,ij}}},
-\qquad W_t=W_{t-1}-\eta_t\frac{U}{\max(1,\operatorname{RMS}(U)/D)}.
+\qquad W_t=W_{t-1}-\eta_t\frac{U}{\max(1,\mathrm{RMS}(U)/D)}.
 ```
 
-Здесь $\operatorname{RMS}(U)=\sqrt{\sum_{ij}U_{ij}^2/(hd)}$, а $D>0$ — порог. Если среднеквадратичная величина обновления превышает $D$, весь шаг пропорционально уменьшают. Записан вариант без первого момента, $\eta_t$ обозначает уже выбранный для слоя шаг.
+Здесь $\mathrm{RMS}(U)=\sqrt{\sum_{ij}U_{ij}^2/(hd)}$, а $D>0$ — порог. Если среднеквадратичная величина обновления превышает $D$, весь шаг пропорционально уменьшают. Записан вариант без первого момента, $\eta_t$ обозначает уже выбранный для слоя шаг.
 
 ### Muon
 
