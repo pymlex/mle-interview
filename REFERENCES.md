@@ -117,4 +117,14 @@
 }
 ```
 
+## Оптимизаторы в лекции 4
+
+- [Duchi, Hazan, Singer. Adaptive Subgradient Methods](https://jmlr.org/papers/v12/duchi11a.html)
+- [Hinton. RMSProp, лекция 6e](https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
+- [Kingma, Ba. Adam](https://arxiv.org/abs/1412.6980)
+- [Loshchilov, Hutter. Decoupled Weight Decay Regularization](https://arxiv.org/abs/1711.05101)
+- [Chen и др. Symbolic Discovery of Optimization Algorithms (Lion)](https://arxiv.org/abs/2302.06675)
+- [Shazeer, Stern. Adafactor](https://arxiv.org/abs/1804.04235)
+- [Jordan и др. Реализация Muon](https://github.com/KellerJordan/Muon/blob/master/muon.py)
+
 The project is under GPL-3.0 license.
