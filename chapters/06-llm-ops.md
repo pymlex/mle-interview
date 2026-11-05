@@ -123,15 +123,22 @@ q_i=\mathrm{round}\left(\frac{w_i}{s}\right),
 Разберём одну строку $W$. Запишем её как вектор-столбец $w\in\mathbb R^d$, где $d$ — число входных признаков. Вектор $\widehat w$ содержит восстановленные после квантизации веса этой строки. Столбец $x_\ell$ матрицы $X$ — вход слоя на калибровочной позиции $\ell$. Ошибка выхода на этой позиции равна $\delta^\top x_\ell$.
 
 ```math
-\begin{aligned}
-\delta &= w-\widehat w,\\
-E(\delta)
-&=\sum_{\ell=1}^{N}(\delta^\top x_\ell)^2
+\delta = w-\widehat w.
+```
+
+Складываем квадраты ошибок по всем $N$ калибровочным позициям.
+
+```math
+E(\delta)=\sum_{\ell=1}^{N}(\delta^\top x_\ell)^2
 =\delta^\top\left(\sum_{\ell=1}^{N}x_\ell x_\ell^\top\right)\delta
-=\delta^\top XX^\top\delta,\\
-\nabla_\delta E&=2XX^\top\delta,
+=\delta^\top XX^\top\delta.
+```
+
+Дифференцируем по $\delta$. Матрица $XX^\top$ симметрична.
+
+```math
+\nabla_\delta E=2XX^\top\delta,
 \qquad H=\nabla_\delta^2 E=2XX^\top.
-\end{aligned}
 ```
 
 Здесь $N$ — число калибровочных позиций. Элемент $H_{ij}=2\sum_{\ell=1}^{N}X_{i\ell}X_{j\ell}$ показывает, насколько совместные изменения весов $i$ и $j$ влияют на ошибку. Гессиан $H$ общий для всех строк $W$, поскольку на каждую строку поступают одни и те же входы $X$.
@@ -148,13 +155,24 @@ E(\delta)
 Введём множитель Лагранжа $\mu$ и продифференцируем по $\Delta$.
 
 ```math
-\begin{aligned}
-L(\Delta,\mu)&=\frac12\Delta^\top H_F\Delta
--\mu(e_j^\top\Delta-r_j),\\
-\nabla_\Delta L &= H_F\Delta-\mu e_j=0,\\
-\Delta &= \mu H_F^{-1}e_j,\\
-r_j=e_j^\top\Delta &= \mu [H_F^{-1}]_{jj}.
-\end{aligned}
+L(\Delta,\mu)=\frac12\Delta^\top H_F\Delta
+-\mu(e_j^\top\Delta-r_j).
+```
+
+```math
+\nabla_\Delta L=H_F\Delta-\mu e_j=0.
+```
+
+Домножаем уравнение слева на $H_F^{-1}$.
+
+```math
+\Delta=\mu H_F^{-1}e_j.
+```
+
+Подставляем это выражение в ограничение на координату $j$.
+
+```math
+r_j=e_j^\top\Delta=\mu[H_F^{-1}]_{jj}.
 ```
 
 Подставляем найденное $\mu$ и получаем правило обновления каждого ещё не округлённого веса $i$.
