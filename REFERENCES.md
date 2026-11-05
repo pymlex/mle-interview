@@ -128,3 +128,15 @@
 - [Jordan и др. Реализация Muon](https://github.com/KellerJordan/Muon/blob/master/muon.py)
 
 The project is under GPL-3.0 license.
+
+## Генерация, квантизация и дообучение в лекции 6
+
+- [Su и др. A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417)
+- [Frantar и др. GPTQ](https://arxiv.org/abs/2210.17323)
+- [Lin и др. AWQ](https://arxiv.org/abs/2306.00978)
+- [Dettmers и др. LLM.int8()](https://arxiv.org/abs/2208.07339)
+- [Dettmers и др. QLoRA и NF4](https://arxiv.org/abs/2305.14314)
+- [Спецификация GGUF](https://github.com/ggml-org/ggml/blob/master/docs/gguf.md)
+- [Liu и др. DoRA](https://arxiv.org/abs/2402.09353)
+- [Liu и др. P-Tuning](https://arxiv.org/abs/2103.10385)
+- [Li, Liang. Prefix-Tuning](https://arxiv.org/abs/2101.00190)
