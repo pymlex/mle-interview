@@ -13,6 +13,7 @@
 5. [Трансформеры](chapters/05-transformers.md) — attention, MHA/MQA/GQA, FlashAttention, PagedAttention, RoPE, Pre-LN, семейства стеков
 6. [Инференс, масштаб, выравнивание](chapters/06-llm-ops.md) — prefill и decoding, KV-кэш, квантизация, параллелизм, LoRA, вывод DPO из RLHF
 7. [Мультимодальность](chapters/07-multimodality.md) — InfoNCE в CLIP, ViT, мост к LLM, LLaVA, Whisper
+8. [Бандиты](chapters/08-bandits.md) — от RL к выбору действий, ε-greedy, UCB, Thompson Sampling, LinUCB, оценка по логам, коммерческая награда и ограничения
 
 
 Полный список источников: [REFERENCES.md](REFERENCES.md).

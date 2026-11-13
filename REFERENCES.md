@@ -140,3 +140,15 @@ The project is under GPL-3.0 license.
 - [Liu и др. DoRA](https://arxiv.org/abs/2402.09353)
 - [Liu и др. P-Tuning](https://arxiv.org/abs/2103.10385)
 - [Li, Liang. Prefix-Tuning](https://arxiv.org/abs/2101.00190)
+
+## Бандиты в лекции 8
+
+- [Sutton, Barto. Reinforcement Learning: An Introduction, второе издание](http://incompleteideas.net/book/the-book-2nd.html)
+- [Lattimore, Szepesvári. Bandit Algorithms](https://tor-lattimore.com/downloads/book/book.pdf)
+- [Auer, Cesa-Bianchi, Fischer. Finite-time Analysis of the Multiarmed Bandit Problem](https://homes.di.unimi.it/~cesabian/Pubblicazioni/ml-02.pdf)
+- [Russo и др. A Tutorial on Thompson Sampling](https://arxiv.org/abs/1707.02038)
+- [Li и др. A Contextual-Bandit Approach to Personalized News Article Recommendation](https://arxiv.org/abs/1003.0146)
+- [Li и др. Unbiased Offline Evaluation of Contextual-bandit-based News Article Recommendation Algorithms](https://arxiv.org/abs/1003.5956)
+- [Dudík, Langford, Li. Doubly Robust Policy Evaluation and Learning](https://arxiv.org/abs/1103.4601)
+- [Garivier, Moulines. On Upper-Confidence Bound Policies for Non-Stationary Bandit Problems](https://arxiv.org/abs/0805.3415)
+- [Badanidiyuru, Kleinberg, Slivkins. Bandits with Knapsacks](https://arxiv.org/abs/1305.2545)
