@@ -152,3 +152,14 @@ The project is under GPL-3.0 license.
 - [Dudík, Langford, Li. Doubly Robust Policy Evaluation and Learning](https://arxiv.org/abs/1103.4601)
 - [Garivier, Moulines. On Upper-Confidence Bound Policies for Non-Stationary Bandit Problems](https://arxiv.org/abs/0805.3415)
 - [Badanidiyuru, Kleinberg, Slivkins. Bandits with Knapsacks](https://arxiv.org/abs/1305.2545)
+
+## Иллюстрации к лекции 8
+
+- [Shangtong Zhang. Реализации примеров Sutton–Barto, рисунки 2.1, 2.2 и 2.4](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
+- [Vowpal Wabbit. Contextual Bandit Content Personalization](https://vowpalwabbit.org/docs/vowpal_wabbit/python/latest/tutorials/python_Simulating_a_news_personalization_scenario_using_Contextual_Bandits.html)
+- [Megajuice. Reinforcement learning diagram, CC0](https://commons.wikimedia.org/wiki/File:Reinforcement_learning_diagram.svg)
+
+Копии лицензий и происхождение файлов сохранены в [figures/BANDIT-IMAGE-SOURCES.md](figures/BANDIT-IMAGE-SOURCES.md).
+
+- [Calvera. Эксперимент с задержками обратной связи](https://neural-bandits.github.io/calvera/benchmark_results_delayed_feedback/)
+- [Open Bandit Pipeline. Схема обучения и оценки политики](https://github.com/st-tech/zr-obp)
