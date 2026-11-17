@@ -1,6 +1,6 @@
 # Источники готовых иллюстраций к главе 8
 
-Файлы скопированы без изменения изображения. Рисунки с суффиксом source сохраняют условия лицензирования оригиналов.
+Файлы с суффиксом source скопированы без изменения изображения. Рисунки с суффиксом source сохраняют условия лицензирования оригиналов.
 
 - bandit-rl-source.png — Megajuice, Reinforcement learning diagram, Wikimedia Commons. CC0. https://commons.wikimedia.org/wiki/File:Reinforcement_learning_diagram.svg
 - bandit-distributions-source.png, bandit-epsilon-source.png, bandit-ucb-source.png — Shangtong Zhang, реализации примеров к Reinforcement Learning: An Introduction. figure_2_1.png, figure_2_2.png, figure_2_4.png. MIT. https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
@@ -8,6 +8,8 @@
 
 - bandit-delay-source.png — Calvera, эксперимент Delayed Feedback. https://neural-bandits.github.io/calvera/benchmark_results_delayed_feedback/ . MIT.
 - bandit-ope-flow-source.png, bandit-ope-results-source.png — Open Bandit Pipeline. https://github.com/st-tech/zr-obp . Apache-2.0.
+
+- bandit-epsilon-horizontal.png — производная от figure_2_2.png Shangtong Zhang, MIT. Исходник разрезан по горизонтали посередине, верхняя половина поставлена слева, нижняя справа.
 
 ## Лицензия Shangtong Zhang
 
