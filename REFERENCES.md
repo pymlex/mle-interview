@@ -186,3 +186,6 @@ The project is under GPL-3.0 license.
 
 - [Calvera. Эксперимент с задержками обратной связи](https://neural-bandits.github.io/calvera/benchmark_results_delayed_feedback/)
 - [Open Bandit Pipeline. Схема обучения и оценки политики](https://github.com/st-tech/zr-obp)
+
+- [Sean Ellis на SaaStr. ICE и шкала 1–10](https://www.saastr.com/sean-ellis-founder-ceo-of-growthhackers-building-a-company-wide-growth-culture-video-transcript/)
+- [ProductPlan. ICE Scoring Model](https://www.productplan.com/glossary/ice-scoring-model)
