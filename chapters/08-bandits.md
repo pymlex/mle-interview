@@ -430,7 +430,7 @@ L(\theta)=\sum_{s=1}^{t-1}(r_s-\phi_s^\top\theta)^2+\lambda\lVert\theta\rVert_2^
 +2\left(\sum_{s=1}^{t-1}\phi_s\phi_s^\top+\lambda I\right)\theta=0.
 ```
 
-Обозначим матрицу в скобках через $A_t$, а вектор из линейной части градиента — через $b_t$. Их определения и оценка коэффициентов имеют вид
+Введём обозначения:
 
 ```math
 A_t=\lambda I+\sum_{s=1}^{t-1}\phi_s\phi_s^\top,
