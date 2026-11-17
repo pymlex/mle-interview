@@ -299,3 +299,5 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
+- bandit-rl-white-background.png — схема Megajuice, CC0, с непрозрачным белым фоном. Используется в лекции вместо прежнего URL изображения.

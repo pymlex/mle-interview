@@ -65,7 +65,7 @@ Q_{t+1}(S_t,A_t)
 
 На готовой схеме agent — агент, environment — среда, action — действие, state — состояние, reward — награда. Проследите замкнутый путь от действия к новому состоянию. Именно этот путь делает последствия решения многошаговыми.
 
-<img src="../figures/bandit-rl-source.png" width="520" alt="Петля взаимодействия агента и среды в RL">
+<img src="../figures/bandit-rl-white-background.png" width="520" alt="Петля взаимодействия агента и среды в RL">
 
 Megajuice, CC0. [Источник](https://commons.wikimedia.org/wiki/File:Reinforcement_learning_diagram.svg)
 
