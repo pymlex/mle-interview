@@ -161,5 +161,28 @@ The project is under GPL-3.0 license.
 
 Копии лицензий и происхождение файлов сохранены в [figures/BANDIT-IMAGE-SOURCES.md](figures/BANDIT-IMAGE-SOURCES.md).
 
+## AI-PM в лекции 9
+
+- [Sean Ellis. Приоритизация по ICE](https://www.growthmarketingsummit.com/aftershow/presentations/GMS%202024%20-%20Sean%20Ellis.pdf)
+- [Intercom. Оригинальное описание RICE](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)
+- [Agile Business Consortium. MoSCoW](https://www.agilebusiness.org/resource/what-is-moscow-prioritization/)
+- Kohavi, Tang, Xu. *Trustworthy Online Controlled Experiments*, 2020.
+- [Microsoft Research. Diagnosing Sample Ratio Mismatch in A/B Testing](https://www.microsoft.com/en-us/research/articles/diagnosing-sample-ratio-mismatch-in-a-b-testing/)
+- [Statistical Challenges in Online Controlled Experiments: A Review of A/B Testing Methodology](https://arxiv.org/abs/2212.11366)
+- [PostgreSQL. Соединения и группировка](https://www.postgresql.org/docs/current/queries-table-expressions.html)
+- [PostgreSQL. Агрегатные функции](https://www.postgresql.org/docs/current/functions-aggregate.html)
+- [PostgreSQL. Оконные функции](https://www.postgresql.org/docs/current/tutorial-window.html)
+- [SciPy. Критерий Манна—Уитни](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html)
+- [SciPy. Двухвыборочный критерий Колмогорова—Смирнова](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html)
+- [SciPy. Критерий хи-квадрат для таблиц сопряжённости](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html)
+
+## Метрики в лекции 10
+
+- Kohavi, Tang, Xu. *Trustworthy Online Controlled Experiments*, 2020.
+- [Rodden, Hutchinson, Fu. Measuring the User Experience on a Large Scale](https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/)
+- [scikit-learn. Метрики качества моделей](https://scikit-learn.org/stable/modules/model_evaluation.html)
+- [scikit-learn. Калибровка вероятностей](https://scikit-learn.org/stable/modules/calibration.html)
+- [Google SRE. Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
+
 - [Calvera. Эксперимент с задержками обратной связи](https://neural-bandits.github.io/calvera/benchmark_results_delayed_feedback/)
 - [Open Bandit Pipeline. Схема обучения и оценки политики](https://github.com/st-tech/zr-obp)

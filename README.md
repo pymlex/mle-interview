@@ -14,6 +14,8 @@
 6. [Инференс, масштаб, выравнивание](chapters/06-llm-ops.md) — prefill и decoding, KV-кэш, квантизация, параллелизм, LoRA, вывод DPO из RLHF
 7. [Мультимодальность](chapters/07-multimodality.md) — InfoNCE в CLIP, ViT, мост к LLM, LLaVA, Whisper
 8. [Бандиты](chapters/08-bandits.md) — от RL к выбору действий, ε-greedy, UCB, Thompson Sampling, LinUCB, оценка по логам, коммерческая награда и ограничения
+9. [AI-PM — AI Project Manager](chapters/09-ai-pm.md) — ICE, RICE, MoSCoW, A/B-тесты, неравные группы и SQL до оконных функций
+10. [Метрики](chapters/10-metrics.md) — уровни и роли метрик, деревья, бизнес-результат, прокси, качество моделей, сервисов и данных
 
 
 Полный список источников: [REFERENCES.md](REFERENCES.md).
