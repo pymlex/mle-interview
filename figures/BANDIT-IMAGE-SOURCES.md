@@ -1,6 +1,6 @@
 # Источники готовых иллюстраций к главе 8
 
-Файлы с суффиксом source скопированы без изменения изображения. Рисунки с суффиксом source сохраняют условия лицензирования оригиналов.
+Файлы с суффиксом source сохраняют оригинальные изображения. В bandit-rl-source.png прозрачность заменена белым фоном для читаемости в тёмной теме. Рисунки с суффиксом source сохраняют условия лицензирования оригиналов.
 
 - bandit-rl-source.png — Megajuice, Reinforcement learning diagram, Wikimedia Commons. CC0. https://commons.wikimedia.org/wiki/File:Reinforcement_learning_diagram.svg
 - bandit-distributions-source.png, bandit-epsilon-source.png, bandit-ucb-source.png — Shangtong Zhang, реализации примеров к Reinforcement Learning: An Introduction. figure_2_1.png, figure_2_2.png, figure_2_4.png. MIT. https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
